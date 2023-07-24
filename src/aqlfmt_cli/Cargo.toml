@@ -1,0 +1,22 @@
+[[bin]]
+name = "aqlfmt"
+path = "src/main.rs"
+
+[package]
+name = "aqlfmt_cli"
+description = "AQLfmt CLI"
+
+authors = ["Luis Quiñones <lpaandres2020@gmail.com>"]
+edition = "2021"
+license = "unlicense"
+repository = "github.com/luisnquin/aqlfmt"
+version = "0.1.0"
+
+[dependencies]
+clap = { version = "*", default_features = false, features = [
+    "color",
+    "derive",
+    "std",
+    "strsim",
+] }
+walkdir = { version = "*", default_features = false, features = [] }
